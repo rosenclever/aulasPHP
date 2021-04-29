@@ -1,3 +1,3 @@
 <?php
-   echo "Hello World!";
+   echo "<p style='color:red;'>Hello World!</p>";
 ?>
