@@ -1,0 +1,154 @@
+<html>
+<!--
+	c:\xampp\htdocs\seuNome\
+	http://localhost/seuNome/calculadora_fp.html
+-->
+<head>
+	<title>calculadora_fp</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<h1>Calculadora de Pontos de Função</h1>
+	<form action="calculadora_fp.php" method="POST">
+		<table border=1>
+			<tr>
+				<td colspan=2>Caso de Uso:</td>
+				<td colspan=3><input type="text" name="txt_caso_de_uso"></td>
+			</tr>
+			<tr>
+				<td rowspan=4>Entradas Externas</td>
+				<td><input type="number"></td>
+				<td>Simples</td>
+				<td> x 3 = </td>
+				<td id="total_ee_simples"></td>
+			</tr>	
+			<tr>
+				<td><input type="number"></td>
+				<td>Media</td>
+				<td> x 4 = </td>
+				<td id="total_ee_media"></td>
+			</tr>
+			<tr>
+				<td><input type="number"></td>
+				<td>Complexa</td>
+				<td> x 6 = </td>
+				<td id="total_ee_complexa">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan=3>Total</td>
+				<td id="total_ee">&nbsp;</td>
+			</tr>
+			<tr>
+				<td rowspan=4>Consultas Externas</td>
+				<td><input type="number"></td>
+				<td>Simples</td>
+				<td> x 3 = </td>
+				<td id="total_ce_simples"></td>
+			</tr>	
+			<tr>
+				<td><input type="number"></td>
+				<td>Media</td>
+				<td> x 4 = </td>
+				<td id="total_ce_media"></td>
+			</tr>
+			<tr>
+				<td><input type="number"></td>
+				<td>Complexa</td>
+				<td> x 6 = </td>
+				<td id="total_ce_complexa">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan=3>Total</td>
+				<td id="total_ce">&nbsp;</td>
+			</tr>
+			<tr>
+				<td rowspan=4>Saídas Externas</td>
+				<td><input type="number"></td>
+				<td>Simples</td>
+				<td> x 4 = </td>
+				<td id="total_se_simples"></td>
+			</tr>	
+			<tr>
+				<td><input type="number"></td>
+				<td>Media</td>
+				<td> x 5 = </td>
+				<td id="total_se_media"></td>
+			</tr>
+			<tr>
+				<td><input type="number"></td>
+				<td>Complexa</td>
+				<td> x 7 = </td>
+				<td id="total_se_complexa">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan=3>Total</td>
+				<td id="total_se">&nbsp;</td>
+			</tr>
+			<tr>
+				<td rowspan=4>Arquivos Lógicos Internos</td>
+				<td><input type="number"></td>
+				<td>Simples</td>
+				<td> x 7 = </td>
+				<td id="total_ali_simples"></td>
+			</tr>	
+			<tr>
+				<td><input type="number"></td>
+				<td>Media</td>
+				<td> x 10 = </td>
+				<td id="total_ali_media"></td>
+			</tr>
+			<tr>
+				<td><input type="number"></td>
+				<td>Complexa</td>
+				<td> x 17 = </td>
+				<td id="total_ali_complexa">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan=3>Total</td>
+				<td id="total_ali">&nbsp;</td>
+			</tr>
+			<tr>
+				<td rowspan=4>Arquivos de Interface Externa</td>
+				<td><input type="number"></td>
+				<td>Simples</td>
+				<td> x 5 = </td>
+				<td id="total_aie_simples"></td>
+			</tr>	
+			<tr>
+				<td><input type="number"></td>
+				<td>Media</td>
+				<td> x 7 = </td>
+				<td id="total_aie_media"></td>
+			</tr>
+			<tr>
+				<td><input type="number"></td>
+				<td>Complexa</td>
+				<td> x 10 = </td>
+				<td id="total_aie_complexa">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan=3>Total</td>
+				<td id="total_aie">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td colspan=4>Pontos de Função não-ajustados</td>
+				<td id="total_pfna">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan=4>Nível de Influência</td>
+				<td><input type="number" name="txt_nivel_influencia"></td>
+			</tr>
+			<tr>
+				<td colspan=4>Fator de Ajuste</td>
+				<td id="fator_ajuste">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan=4>Total de Pontos de Função Ajustados</td>
+				<td id="total_pfa">&nbsp;</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+
